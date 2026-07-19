@@ -125,8 +125,7 @@ const ProjectModal = ({ project, color, onClose }) => (
     onClick={onClose}
     style={{
       position: 'fixed', inset: 0, zIndex: 1000,
-      background: 'rgba(0,0,0,0.75)',
-      backdropFilter: 'blur(20px)',
+      background: 'rgba(5,5,10,0.95)',
       overflowY: 'auto',
       display: 'flex', justifyContent: 'center',
       padding: '2rem 1rem',
@@ -225,7 +224,6 @@ const ProjectModal = ({ project, color, onClose }) => (
                 border: '1px solid rgba(120, 110, 255, 0.4)',
                 color: '#fff', textDecoration: 'none', fontWeight: 700,
                 boxShadow: '0 4px 15px rgba(0,0,0,0.5)',
-                backdropFilter: 'blur(10px)',
                 letterSpacing: '0.5px'
               }}
             >
@@ -308,6 +306,7 @@ const FlatCard = ({ project, index, offset, color, onClick, total }) => {
         boxShadow: isCenter ? '0 30px 60px rgba(0,0,0,0.6)' : '0 10px 30px rgba(0,0,0,0.3)',
         display: 'flex',
         flexDirection: 'column',
+        willChange: 'transform, opacity, z-index',
       }}
     >
       <div style={{
@@ -323,8 +322,8 @@ const FlatCard = ({ project, index, offset, color, onClick, total }) => {
       </div>
 
       <div style={{
-        flex: 1, padding: '1.5rem 2rem 2rem', background: 'rgba(0,0,0,0.25)',
-        backdropFilter: 'blur(10px)', display: 'flex', flexDirection: 'column'
+        flex: 1, padding: '1.5rem 2rem 2rem', background: 'rgba(0,0,0,0.5)',
+        display: 'flex', flexDirection: 'column'
       }}>
         <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#fff', marginBottom: '0.6rem', letterSpacing: '-0.5px' }}>
           {project.title}
@@ -423,7 +422,7 @@ const Projects = () => {
             position: 'absolute', left: 'max(1rem, calc(50% - 320px))', top: '50%', transform: 'translateY(-50%)',
             zIndex: 30, background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)',
             borderRadius: '50%', width: '52px', height: '52px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            cursor: 'pointer', color: '#fff', backdropFilter: 'blur(10px)', transition: 'all 0.2s ease',
+            cursor: 'pointer', color: '#fff', transition: 'all 0.2s ease',
           }}
           onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.14)'}
           onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.06)'}
@@ -437,7 +436,7 @@ const Projects = () => {
             position: 'absolute', right: 'max(1rem, calc(50% - 320px))', top: '50%', transform: 'translateY(-50%)',
             zIndex: 30, background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)',
             borderRadius: '50%', width: '52px', height: '52px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            cursor: 'pointer', color: '#fff', backdropFilter: 'blur(10px)', transition: 'all 0.2s ease',
+            cursor: 'pointer', color: '#fff', transition: 'all 0.2s ease',
           }}
           onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.14)'}
           onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.06)'}

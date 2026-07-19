@@ -129,6 +129,7 @@ const ProjectModal = ({ project, color, onClose }) => (
       overflowY: 'auto',
       display: 'flex', justifyContent: 'center',
       padding: '2rem 1rem',
+      willChange: 'opacity',
     }}
   >
     <motion.div
@@ -144,8 +145,9 @@ const ProjectModal = ({ project, color, onClose }) => (
         border: '1px solid rgba(255,255,255,0.08)',
         maxWidth: '900px', width: '100%',
         overflow: 'hidden',
-        boxShadow: '0 40px 100px rgba(0,0,0,0.8)',
+        boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
         height: 'fit-content',
+        willChange: 'transform, opacity',
       }}
     >
       {project.images && project.images.length > 0 ? (

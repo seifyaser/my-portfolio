@@ -33,6 +33,36 @@ const About = () => {
             <p style={{ color: 'var(--text-muted)', fontSize: '1.25rem', lineHeight: 1.8, maxWidth: '700px', margin: '0 auto' }}>
               I focus on building high-quality Flutter applications that feel native, responsive, and incredibly smooth. My passion lies in strictly typed architectures and extreme performance optimization. Through continuous learning and adopting modern engineering principles, I bridge the gap between brilliant design and flawless execution.
             </p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '4rem', textAlign: 'left' }}>
+              {/* Education */}
+              <div style={{ background: 'rgba(255,255,255,0.03)', padding: '2rem', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <h3 style={{ color: '#fff', fontSize: '1.3rem', fontWeight: 800, marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1rem' }}>
+                  Education
+                </h3>
+                <h4 style={{ color: 'var(--primary)', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.3rem' }}>Bachelor of Computer Science</h4>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '1rem', letterSpacing: '0.5px' }}>
+                  08/2022 – 07/2026 | Obour City, Egypt
+                </p>
+                <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                  Faculty of Computer Science and Artificial Intelligence, Benha National University.
+                </p>
+              </div>
+
+              {/* Experience */}
+              <div style={{ background: 'rgba(255,255,255,0.03)', padding: '2rem', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <h3 style={{ color: '#fff', fontSize: '1.3rem', fontWeight: 800, marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1rem' }}>
+                  Professional Experience
+                </h3>
+                <h4 style={{ color: 'var(--primary)', fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.3rem' }}>Flutter Intern</h4>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '1rem', letterSpacing: '0.5px' }}>
+                  07/2025 – 08/2025 | Transport Information Technology (TransIT), Nasr City
+                </p>
+                <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                  Developed a BRT (Bus Rapid Transit) application for booking tickets.
+                </p>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>

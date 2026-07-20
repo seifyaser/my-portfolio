@@ -31,8 +31,9 @@ const Hero = () => {
           display: 'flex', 
           flexDirection: 'row', 
           alignItems: 'center', 
-          justifyContent: 'space-between',
-          gap: '4rem',
+          justifyContent: 'center',
+          alignContent: 'center',
+          gap: 'clamp(3rem, 5vw, 4rem)',
           flexWrap: 'wrap'
         }}>
           
@@ -167,7 +168,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
             transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             style={{ 
-              flex: '1 1 400px', 
+              flex: '1 1 350px', 
               display: 'flex', 
               justifyContent: 'center', 
               alignItems: 'center',

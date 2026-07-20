@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="philosophy" className="section" style={{ position: 'relative', marginTop: '5rem' }}>
+    <section id="about" className="section" style={{ position: 'relative', marginTop: '5rem' }}>
       <div className="container">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95, filter: 'blur(10px)' }}
@@ -14,7 +14,7 @@ const About = () => {
           style={{ 
             maxWidth: '900px', 
             margin: '0 auto', 
-            padding: '4rem', 
+            padding: 'clamp(1.5rem, 5vw, 4rem)', 
             borderRadius: '40px',
             textAlign: 'center',
             position: 'relative',
@@ -34,9 +34,9 @@ const About = () => {
               I focus on building high-quality Flutter applications that feel native, responsive, and incredibly smooth. My passion lies in strictly typed architectures and extreme performance optimization. Through continuous learning and adopting modern engineering principles, I bridge the gap between brilliant design and flawless execution.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '4rem', textAlign: 'left' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 'clamp(1rem, 4vw, 2rem)', marginTop: '4rem', textAlign: 'left' }}>
               {/* Education */}
-              <div style={{ background: 'rgba(255,255,255,0.03)', padding: '2rem', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
+              <div style={{ background: 'rgba(255,255,255,0.03)', padding: 'clamp(1.2rem, 4vw, 2rem)', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
                 <h3 style={{ color: '#fff', fontSize: '1.3rem', fontWeight: 800, marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1rem' }}>
                   Education
                 </h3>
@@ -50,7 +50,7 @@ const About = () => {
               </div>
 
               {/* Experience */}
-              <div style={{ background: 'rgba(255,255,255,0.03)', padding: '2rem', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
+              <div style={{ background: 'rgba(255,255,255,0.03)', padding: 'clamp(1.2rem, 4vw, 2rem)', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
                 <h3 style={{ color: '#fff', fontSize: '1.3rem', fontWeight: 800, marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1rem' }}>
                   Professional Experience
                 </h3>

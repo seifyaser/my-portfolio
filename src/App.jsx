@@ -12,9 +12,11 @@ function App() {
     <>
       <Navbar />
       {/* Background Orbs */}
-      <div className="bg-glow" style={{ top: '-10%', left: '-10%', width: '50vw', height: '50vw', background: 'var(--primary)' }}></div>
-      <div className="bg-glow" style={{ bottom: '10%', right: '-10%', width: '40vw', height: '40vw', background: 'var(--secondary)' }}></div>
-      <div className="bg-glow" style={{ top: '40%', left: '30%', width: '30vw', height: '30vw', background: 'var(--primary)', opacity: '0.2' }}></div>
+      <div style={{ position: 'fixed', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: -1 }}>
+        <div className="bg-glow" style={{ top: '-10%', left: '-10%', width: '50vw', height: '50vw', background: 'var(--primary)' }}></div>
+        <div className="bg-glow" style={{ bottom: '10%', right: '-10%', width: '40vw', height: '40vw', background: 'var(--secondary)' }}></div>
+        <div className="bg-glow" style={{ top: '40%', left: '30%', width: '30vw', height: '30vw', background: 'var(--primary)', opacity: '0.2' }}></div>
+      </div>
       
       <main>
         <Hero />

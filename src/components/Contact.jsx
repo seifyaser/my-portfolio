@@ -13,18 +13,18 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           style={{ textAlign: 'center' }}
         >
-          <h2 style={{ fontSize: 'clamp(3rem, 6vw, 6rem)', fontWeight: 800, letterSpacing: '-2px', marginBottom: '4rem' }}>
+          <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 6rem)', fontWeight: 800, letterSpacing: '-1px', marginBottom: '3rem' }}>
             Let's build something <span style={{ background: 'linear-gradient(to right, var(--primary), var(--secondary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>extraordinary.</span>
           </h2>
 
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <motion.a 
               whileHover={{ scale: 1.05, y: -5, boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }}
               whileTap={{ scale: 0.95 }}
               href="https://wa.me/201156162380"
               target="_blank" rel="noreferrer"
               className="glass"
-              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '2rem 3rem', borderRadius: '30px', color: 'var(--text-main)', textDecoration: 'none', minWidth: '200px' }}
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '1.5rem 2rem', borderRadius: '30px', color: 'var(--text-main)', textDecoration: 'none', flex: '1 1 140px', maxWidth: '220px', minWidth: 0 }}
             >
               <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '50%' }}>
                 <MessageCircle size={32} color="#25D366" />
@@ -38,7 +38,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/saif-yasser-166035265/"
               target="_blank" rel="noreferrer"
               className="glass"
-              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '2rem 3rem', borderRadius: '30px', color: 'var(--text-main)', textDecoration: 'none', minWidth: '200px' }}
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '1.5rem 2rem', borderRadius: '30px', color: 'var(--text-main)', textDecoration: 'none', flex: '1 1 140px', maxWidth: '220px', minWidth: 0 }}
             >
               <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '50%' }}>
                 <Briefcase size={32} color="#0A66C2" />
@@ -52,7 +52,7 @@ const Contact = () => {
               href="https://github.com/seifyaser"
               target="_blank" rel="noreferrer"
               className="glass"
-              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '2rem 3rem', borderRadius: '30px', color: 'var(--text-main)', textDecoration: 'none', minWidth: '200px' }}
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '1.5rem 2rem', borderRadius: '30px', color: 'var(--text-main)', textDecoration: 'none', flex: '1 1 140px', maxWidth: '220px', minWidth: 0 }}
             >
               <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '50%' }}>
                 <Code size={32} />

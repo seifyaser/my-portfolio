@@ -42,7 +42,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            style={{ flex: '1 1 500px', maxWidth: '650px' }}
+            style={{ flex: '1 1 300px', minWidth: 0, maxWidth: '650px', width: '100%' }}
           >
             {/* Tags */}
             <div style={{ 
@@ -64,7 +64,7 @@ const Hero = () => {
             
             {/* Name Typography */}
             <h1 style={{ 
-              fontSize: 'clamp(4rem, 8vw, 7.5rem)', 
+              fontSize: 'clamp(2.8rem, 8vw, 7.5rem)', 
               fontWeight: 800, 
               lineHeight: 1.05, 
               letterSpacing: '-2px',
@@ -81,7 +81,7 @@ const Hero = () => {
 
             {/* Subtitle */}
             <h2 style={{ 
-              fontSize: 'clamp(1.5rem, 3vw, 2rem)', 
+              fontSize: 'clamp(1.3rem, 3vw, 2rem)', 
               color: '#fff', 
               fontWeight: 700, 
               lineHeight: 1.3,
@@ -112,7 +112,7 @@ const Hero = () => {
             </p>
             
             {/* Buttons */}
-            <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <motion.button 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -122,8 +122,9 @@ const Hero = () => {
                 style={{ 
                   display: 'flex', 
                   alignItems: 'center', 
+                  justifyContent: 'center',
                   gap: '0.5rem', 
-                  padding: '1.2rem 2.5rem', 
+                  padding: '1rem 2rem', 
                   borderRadius: '40px', 
                   background: 'var(--primary)', 
                   color: '#000', 
@@ -145,8 +146,9 @@ const Hero = () => {
                 style={{ 
                   display: 'flex', 
                   alignItems: 'center', 
+                  justifyContent: 'center',
                   gap: '0.5rem', 
-                  padding: '1.2rem 2.5rem', 
+                  padding: '1rem 2rem', 
                   borderRadius: '40px', 
                   background: 'transparent',
                   border: '2px solid rgba(255,255,255,0.1)',
@@ -168,7 +170,9 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
             transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             style={{ 
-              flex: '1 1 350px', 
+              flex: '1 1 260px', 
+              minWidth: 0,
+              width: '100%',
               display: 'flex', 
               justifyContent: 'center', 
               alignItems: 'center',
@@ -177,7 +181,8 @@ const Hero = () => {
           >
             {/* The circular wrapper */}
             <div style={{
-              width: 'clamp(300px, 40vw, 480px)',
+              width: 'clamp(220px, 65vw, 480px)',
+              maxWidth: '100%',
               aspectRatio: '1/1',
               borderRadius: '50%',
               border: '2px solid var(--primary)',

@@ -168,16 +168,16 @@ const ProjectModal = ({ project, color, onClose }) => (
         </div>
       )}
 
-      <div style={{ padding: '3rem' }}>
+      <div style={{ padding: 'clamp(1.2rem, 4vw, 3rem)' }}>
         <h2 style={{
-          fontSize: 'clamp(2rem,4vw,3.5rem)', fontWeight: 800, color: '#fff',
+          fontSize: 'clamp(1.8rem,4vw,3.5rem)', fontWeight: 800, color: '#fff',
           letterSpacing: '-1px', marginBottom: '1.5rem'
         }}>{project.title}</h2>
         <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '3rem' }}>
           {project.overview}
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(260px, 100%),1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
           {[
             { icon: Target,   label: 'The Problem',  text: project.problem },
             { icon: Layout,   label: 'My Solution',  text: project.solution },
